@@ -1,0 +1,93 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "username": "admin2",
+      "password": "password231"
+    },
+    {
+      "id": 3,
+      "username": "admin3",
+      "password": "password321"
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "title": "blablublii",
+      "year": 2025,
+      "date": "2025-12-18T00:05:45.919Z"
+    },
+    {
+      "id": 2,
+      "title": "k6 a little bit moose",
+      "year": 2025,
+      "date": "2025-12-18T00:05:45.919Z"
+    },
+    {
+      "id": 3,
+      "title": "Baldur's Gate 3",
+      "year": 2023,
+      "date": "2025-11-20T12:00:00Z"
+    },
+    {
+      "id": 4,
+      "title": "Elden Ring",
+      "year": 2022,
+      "date": "2025-11-10T12:00:00Z"
+    },
+    {
+      "id": 5,
+      "title": "It Takes Two",
+      "year": 2021,
+      "date": "2025-10-30T12:00:00Z"
+    },
+    {
+      "id": 6,
+      "title": "The Last of Us Part II",
+      "year": 2020,
+      "date": "2025-10-10T12:00:00Z"
+    },
+    {
+      "id": 7,
+      "title": "Sekiro: Shadows Die Twice",
+      "year": 2019,
+      "date": "2025-09-25T12:00:00Z"
+    },
+    {
+      "id": 8,
+      "title": "God of War",
+      "year": 2018,
+      "date": "2025-09-10T12:00:00Z"
+    },
+    {
+      "id": 9,
+      "title": "The Legend of Zelda: Breath of the Wild",
+      "year": 2017,
+      "date": "2025-08-20T12:00:00Z"
+    },
+    {
+      "id": 10,
+      "title": "Uncharted 4",
+      "year": 2016,
+      "date": "2025-08-01T12:00:00Z"
+    },
+    {
+      "id": 11,
+      "title": "The Witcher 3: Wild Hunt",
+      "year": 2015,
+      "date": "2025-07-15T12:00:00Z"
+    },
+    {
+      "id": 12,
+      "title": "Dragon Age: Inquisition",
+      "year": 2014,
+      "date": "2025-07-01T12:00:00Z"
+    }
+  ]
+}
