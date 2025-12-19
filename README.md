@@ -77,6 +77,16 @@ API
 - GET /games
   - header: `Authorization: Bearer <JWT>`
   - response: array of up to 10 games (sorted by date desc)
+ - PUT /games
+   - header: `Authorization: Bearer <JWT>`
+   - body: { "id": 1, "title": "New Title", "year": 2025, "date": "2025-12-18" }
+   - responses:
+     - `200`: updated game object (JSON)
+     - `400`: { "message": "id, title, year and date are required" }
+     - `404`: { "message": "game not found" }
+     - `500`: { "message": "internal error" }
+ - GET /health
+   - response: { "status": "ok" }
 
 Swagger
 - Open `http://localhost:3000/docs` after starting the server.
