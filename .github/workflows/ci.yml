@@ -61,5 +61,8 @@ jobs:
         sudo chmod +x /usr/local/bin/k6
         k6 version
 
+    - name: Start the API server
+      run: npm start
+
     - name: Run performance tests
       run: npm run k6
