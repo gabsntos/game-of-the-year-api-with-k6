@@ -24,11 +24,13 @@ jobs:
 
     - name: Install k6
       run: |
-        sudo apt-get update
-        sudo apt-get install -y gnupg2 curl
-        curl -s https://packagecloud.io/install/repositories/loadimpact/k6/script.deb.sh | sudo bash
-        sudo apt-get update
-        sudo apt-get install -y k6
+        set -e
+        K6_VERSION=0.48.0
+        curl -fL -o k6.tar.gz "https://github.com/grafana/k6/releases/download/v${K6_VERSION}/k6-v${K6_VERSION}-linux-amd64.tar.gz"
+        tar -xzf k6.tar.gz
+        sudo mv k6-v${K6_VERSION}-linux-amd64/k6 /usr/local/bin/
+        sudo chmod +x /usr/local/bin/k6
+        k6 version
 
     - name: Run performance tests
       run: npm run k6
