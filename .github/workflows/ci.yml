@@ -62,7 +62,7 @@ jobs:
         k6 version
 
     - name: Start the API server
-      run: npm start
+      run: npm start &
 
     - name: Run performance tests
       run: npm run k6
