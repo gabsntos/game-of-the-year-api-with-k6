@@ -11,9 +11,9 @@ const BASE_URL = __ENV.LOCAL || 'http://localhost:3000'
 
 export const options = {
   stages: [
-    { duration: '1s', target: 1 }, // Ramp up to 5 VUs over 1 sec
-    { duration: '5s', target: 5 }, // Stay at 5 VUs for 5 sec (constant load)
-    { duration: '1s', target: 0 }, // Ramp down to 0 VUs over 1 sec
+    { duration: '5s', target: 5 }, // Ramp up to 5 VUs over 1 sec
+    { duration: '5s', target: 10 }, // Stay at 5 VUs for 5 sec (constant load)
+    { duration: '5s', target: 0 }, // Ramp down to 0 VUs over 1 sec
   ],
   thresholds: {
     http_req_duration: ['p(90)<=30', 'p(95)<30'],
