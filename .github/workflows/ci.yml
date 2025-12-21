@@ -22,10 +22,13 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Setup k6
-      uses: grafana/setup-k6@v1
-      with:
-        k6-version: '0.48.0'
+    - name: Install k6
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y gnupg2 curl
+        curl -s https://packagecloud.io/install/repositories/loadimpact/k6/script.deb.sh | sudo bash
+        sudo apt-get update
+        sudo apt-get install -y k6
 
     - name: Run performance tests
       run: npm run k6
