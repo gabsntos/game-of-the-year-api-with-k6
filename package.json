@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "k6": "k6 run ./tests/k6/script.js",
     "dev": "nodemon server.js"
   },
   "keywords": [],
